@@ -85,7 +85,7 @@
 (() => {
   // ===== Config =====
   const MAX_SPRITES = 60;
-  const START_SPEED = [340, 420]; // faster motion
+  const START_SPEED = [390, 420]; // faster motion
   const SPRITE_RADIUS = 15;
   const DOT_RADIUS = 6;
   const ARENA_PADDING = 6;
@@ -234,7 +234,7 @@
     overlay.classList.add("hidden");
     startOverlay.classList.remove("hidden");
     toggleBtn.textContent="Pause";
-    img1Display.src = img1.src; img2Display.src = img2.src;
+    // img1Display.src = img1.src; img2Display.src = img2.src;
     name1El.textContent = name1; name2El.textContent = name2;
     score1El.textContent = "0"; score2El.textContent = "0";
     showControls(true);
@@ -260,7 +260,7 @@
     showControls(false); // hide after start for clean view
   });
   toggleBtn.addEventListener("click", ()=>{
-    if (!started || gameOver) return;
+    if (!started) return;
     running=!running;
     toggleBtn.textContent = running ? "Pause" : "Start";
   });
