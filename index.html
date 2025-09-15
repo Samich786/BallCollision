@@ -39,7 +39,7 @@
 
       <!-- Scoreboard (desktop: right side, mobile: below in row) -->
       <div id="badges"
-           class="flex gap-2 mt-2 sm:mt-0 sm:flex-col sm:absolute sm:top-1/2 sm:-translate-y-1/2 sm:right-[-72px] cursor-pointer
+           class="flex gap-2 mt-5 sm:mt-0 sm:flex-col sm:absolute sm:top-1/2 sm:-translate-y-1/2 sm:right-[-72px] cursor-pointer
                   justify-center sm:justify-start">
         <div class="mini-badge flex items-center gap-1 bg-zinc-900/60 rounded-lg px-2 py-1">
           <img id="img1-display" src="" class="w-6 h-6 rounded-full border border-emerald-500 object-cover"/>
@@ -85,7 +85,7 @@
 (() => {
   // ===== Config =====
   const MAX_SPRITES = 60;
-  const START_SPEED = [390, 420]; // faster motion
+  const START_SPEED = [300, 350]; // faster motion
   const SPRITE_RADIUS = 15;
   const DOT_RADIUS = 6;
   const ARENA_PADDING = 6;
